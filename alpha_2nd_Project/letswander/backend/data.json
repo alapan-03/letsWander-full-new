@@ -1,0 +1,387 @@
+[
+    {
+        "name": "New Zealand",
+        "price": 499,
+        "duration": 6,
+        "theme": "Honeymoon",
+        "domestic": false,
+        "bestSelling": false,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Dubai",
+        "price": 399,
+        "duration": 4,
+        "theme": "Summer",
+        "domestic": false,
+        "bestSelling": true,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Australia",
+        "price": 799,
+        "duration": 7,
+        "theme": "Winter",
+        "domestic": false,
+        "bestSelling": false,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Gujarat",
+        "duration": 15,
+        "price": 579,
+        "theme": "Honeymoon",
+        "domestic": true,
+        "bestSelling": false,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Jammu And Kashmir",
+        "duration": 10,
+        "price": 549,
+        "theme": "Winter",
+        "domestic": true,
+        "bestSelling": true,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Switzerland",
+        "duration": 7,
+        "price": 1299,
+        "theme": "Honeymoon",
+        "domestic": false,
+        "bestSelling": true,
+        "image": "https://images.pexels.com/photos/922978/pexels-photo-922978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    },
+    {
+        "name": "Rajasthan",
+        "duration": 15,
+        "price": 789,
+        "theme": "Honeymoon",
+        "domestic": true,
+        "bestSelling": false,
+        "image": "https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "images": ["https://images.pexels.com/photos/1022479/pexels-photo-1022479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.pexels.com/photos/2226900/pexels-photo-2226900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/808467/pexels-photo-808467.jpeg"],
+        "overview": "Visit New Zealand: a place that lets you discovering true romance of life. New Zealand appeals the tourists with its panoramic landscape views, vivid festivals, scrumptious food & wine, and thrilling outdoor experiences. The country has everything that a person desires during his trip. New Zealand is known for its indigenous people and charming landscapes. Take this tour package of New Zealand and visit a world of endless fun opportunities.",
+
+        "inclusions": ["Accommodation with breakfast for 01 Night in Auckland at Auckland City Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Rotorua at Ibis Rotorua Hotel or similar."
+        ,"Accommodation with breakfast for 02 Nights in Christchurch at Ibis Christchurch Hotel/ Heartland Hotel Cotswold or similar."
+        ,"Accommodation with breakfast for 01 Night in Westland Glacier Region."
+        ,"Accommodation with breakfast for 03 Nights in Queenstown at Heartland Hotel Queenstown/ Nugget Point Hotel or similar."
+        ,"Exclusive Meet & Greet Arrival Transfer."
+        ,"Auckland to Rotorua Tour."
+        ,"Hobbiton Movie Set Tour."
+        ,"Rotorua Highlights Tour (May-Sep only)."
+        ,"Te Ra Guided Experience & Te Po - Indigenous Evening Experience."
+        ,"Christchurch to Glacier Country Tour."
+        ,"Tranz Alpine Train (when operating)."
+        ,"Glacier Country to Queenstown Tour."
+        ,"Milford Sound Tour with Cruise & Lunch."
+        ,"Queenstown/Mt Cook/Christchurch Tour."
+        ,"CBD accommodation pick up/drop off."
+        ,"Airport Transfers."
+        ,"All Tours and Transfers are on a sharing basis."],
+
+        "exclusions": ["International and Domestic Flights."
+        ,"VISA fee is not included in the cost of the package."
+        ,"Passport fees, immunization costs, city taxes at the hotel and local departure taxes (wherever applicable)."
+        ,"Tipping."
+        ,"5% GST and 5% TCS."
+        ,"Insurance."
+        ,"Any other expenses which are not mentioned at the included section."
+        ,"Extra PCR Tests as per the airline requirement on departure."
+        ,"Entrances to the sightseeing points not included unless specifically mentioned in the Itinerary."
+        ,"Early check in or late checkout charges."
+        ,"Usage of vehicle beyond the given route drives after 06:00 PM, usage of guide beyond the mentioned timings or anything beyond the itinerary."
+        ,"Camera or Video permits."
+        ,"Expenses of a personal nature."
+        ,"Any Increase in the fuel surcharge or any kind of taxes levied by the respective government or statutory bodies."
+        ,"Any Increase in the rate of exchange leading to an increase in all land arrangements which may come in to effect prior to departure."
+        ,"Cost of extension of the validity or deviation from the route of the tour."
+        ,"Porterage, laundry, wines &amp; alcoholic beverages, mineral water (unless specified), telephone charges, shopping, all items of personal nature and also food and drinks not forming the part of the group menus."],
+        
+        "itenerary": ["On arrival you will be met and transferred to your accommodation. Auckland is New Zealand largest city, set between two harbours with gentle sandy shores on the east coast and black sand, wild surf beaches on the west coast. Auckland is an oasis of food, music, arts and culture. It’s where sparkling waters and lush landscapes meet city sophistication. You’ll find the best of both worlds in Auckland, with beautiful rainforests, parks and beaches all so close to the city centre. .Day is at leisure for you to explore the city on your own. You may choose to opt to view Auckland City from 328 metres high above street level in the iconic Sky Tower (optional tour). This is a great introduction to the city as it provides panoramic 360 degree views up to 80km in every direction. Else, you may choose to hop on a Dinner Cruise at Auckland Harbour (optional tour). Overnight stay at the hotel.",
+        
+        "Today’s coach tour takes you through the rolling green hills to the iconic Hobbiton Movie Set, one of New Zealand’s ‘must-see’ destinations. See where the Lord of the Rings and Hobbit movies were filmed as your tour guide shares behind-the-scenes tales. You’ll see sights like Hobbit Holes, the Mill, and The Green Dragon Inn, and learn how farmland was transformed into a living, breathing piece of Middle-earth. After exploring Hobbiton, tuck into a delicious lunch before continuing to Rotorua .Day is at leisure to explore on your own. You may choose to opt for Treewalk Nightlights (optional tour). Forest and fantasy come to life within this magical illuminated evening treewalk. Set high amongst the giant redwood trees, 30 exquisite lanterns float above the forest floor. Enjoy the mesmerising forest at night on a 40 minute award-winning, eco- tourism walk that spans 28 platforms and suspension bridges. Suitable for all ages and perfect for those looking for things to do in Rotorua at night. .Overnight stay at Rotorua.",
+
+        "Wake up in the morning, have a scrumptious breakfast and pack your bags for your departure. Check-out and board your flight for your return journey home."
+    ]
+    }
+]

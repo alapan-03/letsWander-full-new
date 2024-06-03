@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.239" height="17.113" viewBox="0 0 19.239 17.113">
+  <g id="emi-pay-list" transform="translate(0.093 -0.675)">
+    <g id="g3725">
+      <g id="Group_51305" data-name="Group 51305">
+        <g id="g3733" transform="translate(5.327 1.175)">
+          <path id="path3735" d="M-143.058-286.116a4.157,4.157,0,0,1-4.152-4.152,4.157,4.157,0,0,1,4.152-4.152,4.157,4.157,0,0,1,4.152,4.152,4.157,4.157,0,0,1-4.152,4.152" transform="translate(147.21 294.421)" fill="none" stroke="#333" stroke-width="1"/>
+          <path id="path3735-2" data-name="path3735" d="M-143.911-287.822a3.3,3.3,0,0,1-3.3-3.3,3.3,3.3,0,0,1,3.3-3.3,3.3,3.3,0,0,1,3.3,3.3,3.3,3.3,0,0,1-3.3,3.3" transform="translate(148.063 295.273)" fill="#abe39d"/>
+        </g>
+        <g id="g3737" transform="translate(4.497 10.595)">
+          <path id="path3739" d="M-302.639-196.8a1.747,1.747,0,0,0,1.116-.4l3.995-3.315a1.086,1.086,0,0,0-.715-1.9h0a1.087,1.087,0,0,0-.637.207l-2.936,2.047a2.186,2.186,0,0,1-1.251.393h-1.882a1.131,1.131,0,0,0,1.138-1.084A1.115,1.115,0,0,0-304.926-202h-2.164a8.28,8.28,0,0,0-3.654.85l-.54.266v4.09Z" transform="translate(311.285 202.417)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <path id="path3741" d="M14.667-307.492h4.09v-7.065h-4.09Z" transform="translate(-14.259 324.78)" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        <g id="g3743" transform="translate(1.895 11.711)">
+          <path id="path3745" d="M0,0H0" fill="none" stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <path id="path2" d="M6.356,3.452H5.226a.226.226,0,1,1,0-.452H7.939a.226.226,0,1,1,0,.452H7.261a1.124,1.124,0,0,1,.2.452h.475a.226.226,0,1,1,0,.452H7.464a1.131,1.131,0,0,1-1.108.9H6.224L7.647,6.683a.226.226,0,0,1-.32.32L5.518,5.194a.226.226,0,0,1,.16-.386h.678A.678.678,0,0,0,7,4.356H5.226a.226.226,0,1,1,0-.452H7A.678.678,0,0,0,6.356,3.452Z" transform="translate(2.867 0.584)" fill="#333" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
