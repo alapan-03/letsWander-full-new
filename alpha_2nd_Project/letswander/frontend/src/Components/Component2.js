@@ -44,7 +44,7 @@ export default function Component2(props) {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`${URL}/api/v1/tours?name=${props.data}`, {
+        const response = await fetch(`/api/v1/tours?name=${props.data}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${stringWithoutQuotes}`,
