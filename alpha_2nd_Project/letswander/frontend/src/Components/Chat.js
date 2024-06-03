@@ -8,7 +8,7 @@ import { useRef } from "react";
 import { MessageBox } from "react-chat-elements";
 import Navbar from "./Navbar";
 
-const socket = io("http://localhost:5000"); // Create socket connection outside the component
+const socket = io("https://letswander-full-new.onrender.com"); // Create socket connection outside the component
 
 export default function Chat(props) {
   const cookie = new Cookies();
@@ -326,7 +326,7 @@ export default function Chat(props) {
                 >
                   <p>
                     {msg.senderId !== me.id
-                      ? msg.senderId?.name.split(" ")[0]
+                      ? msg?.senderId?.name?.split(" ")[0]
                       : ""}{" "}
                     {msg?.message}
                   </p>
@@ -362,9 +362,9 @@ export default function Chat(props) {
               <p className="chat-info-p2">Description</p>
               <p>
                 {tour &&
-                  tour?.overview.split(". ")[0] +
+                  tour?.overview?.split(". ")[0] +
                     ". " +
-                    tour?.overview.split(". ")[1] +
+                    tour?.overview?.split(". ")[1] +
                     "."}
               </p>
             </div>
