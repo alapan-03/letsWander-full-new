@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d406149.css",
+    "main.js": "/static/js/main.17d0b20c.js",
+    "static/js/787.ca3b363b.chunk.js": "/static/js/787.ca3b363b.chunk.js",
+    "static/media/background3.jpg": "/static/media/background3.608b7945bcf6e7c84619.jpg",
+    "static/media/testimonial.jpg": "/static/media/testimonial.ac91bc14ae2a50af0ce8.jpg",
+    "static/media/swiper-pic.jpg": "/static/media/swiper-pic.3ac9c94e22b04c3d108e.jpg",
+    "static/media/pic1.jpg": "/static/media/pic1.150567f9c2277c2db029.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/emi-pay-list.svg": "/static/media/emi-pay-list.3009e2c5d48f20f8c266e28b94addb53.svg",
+    "index.html": "/index.html",
+    "main.2d406149.css.map": "/static/css/main.2d406149.css.map",
+    "main.17d0b20c.js.map": "/static/js/main.17d0b20c.js.map",
+    "787.ca3b363b.chunk.js.map": "/static/js/787.ca3b363b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d406149.css",
+    "static/js/main.17d0b20c.js"
+  ]
+}
