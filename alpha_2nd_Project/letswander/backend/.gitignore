@@ -27,8 +27,8 @@ yarn-error.log*
 /node_modules/
 
 
-src\backend\config\service-account.json
-src/backend/config/service-account.json
-src/backend/config/service-account.json:1
+# src\backend\config\service-account.json
+# src/backend/config/service-account.json
+# src/backend/config/service-account.json:1
 
-/config/service-account.json
+# /config/service-account.json
