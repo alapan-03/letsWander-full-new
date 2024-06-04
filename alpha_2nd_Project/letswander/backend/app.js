@@ -20,7 +20,7 @@ const cors = require("cors")
 // app.use(cors())
 
 const corsOptions = {
-    origin: 'http://localhost:5000',
+    origin: 'https://letswander-full-new.onrender.com',
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
 };

@@ -10,7 +10,7 @@ const path = require("path");
 
 
 app.use(cors({
-    origin: 'http://localhost:5000', // Replace with your React app's URL
+    origin: 'https://letswander-full-new.onrender.com', // Replace with your React app's URL
     credentials: true,
 }));
 
@@ -51,7 +51,7 @@ mongoose.connect(process.env.mongo_connect)
 
 const io = new Server(expressServer, {
     cors: {
-        origin: "http://localhost:5000", // Your frontend URL
+        origin: "https://letswander-full-new.onrender.com", // Your frontend URL
         methods: ["GET", "POST"]
     }
 });
