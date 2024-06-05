@@ -40,7 +40,13 @@ export default function Signup(props) {
   const loginGoogle = async () => {
     try {
       const cookies = new Cookies();
-      const result = await signInWithPopup(auth, new GoogleAuthProvider());
+
+      const provider = new GoogleAuthProvider();
+      provider.setCustomParameters({
+        prompt: 'select_account'
+      });
+
+      const result = await signInWithPopup(auth, provider);
 
       if (result) {
         const user = result.user;

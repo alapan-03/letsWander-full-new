@@ -39,9 +39,9 @@ exports.stripe = async (req, res, next) => {
           price_data: {
             currency: "inr",
             product_data: {
-              name: "Premium plan",
+              name: "Tour",
             },
-            unit_amount: "300",
+            unit_amount: "799",
           },
           quantity: "1",
         }

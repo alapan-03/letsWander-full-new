@@ -57,7 +57,13 @@ export default function Login(props) {
 
       // Start Google sign-in process\
       // console.log("hey auth")
-      const result = await signInWithPopup(auth, new GoogleAuthProvider());
+
+      const provider = new GoogleAuthProvider();
+    provider.setCustomParameters({
+      prompt: 'select_account'
+    });
+
+      const result = await signInWithPopup(auth, provider);
       console.log(result);
 
       if (result) {
@@ -107,21 +113,21 @@ export default function Login(props) {
     }
   };
 
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        user
-          .getIdToken()
-          .then((token) => {})
-          .catch((error) => {
-            console.error("Error getting ID token:", error);
-          });
-      } else {
-      }
-    });
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
+  //     if (user) {
+  //       user
+  //         .getIdToken()
+  //         .then((token) => {})
+  //         .catch((error) => { 
+  //           console.error("Error getting ID token:", error);
+  //         });
+  //     } else {
+  //     }
+  //   });
 
-    return () => unsubscribe();
-  }, []);
+  //   return () => unsubscribe();
+  // }, []);
 
   const handleLogInRequest = async (userData) => {
     try {
