@@ -106,6 +106,7 @@ io.on("connection", (socket) => {
       message: data.message,
       chatId: data.chatId,
       senderId: data.senderId,
+      name: data.name
     });
     // console.log(`Message emitted to room: ${data.chatId}`);
   });

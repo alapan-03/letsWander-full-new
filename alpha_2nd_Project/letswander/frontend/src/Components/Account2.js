@@ -4,6 +4,9 @@ import Cookies from "universal-cookie";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import url from "./rootUrl"
+import { useDispatch } from "react-redux";
+import { addItem } from "./../redux/slices/cartSlice";
+
 
 export default function Account2(props) {
   const cookies = new Cookies();
@@ -17,16 +20,19 @@ export default function Account2(props) {
   const [uploadPhoto, setUploadPhoto] = useState(false);
 
   let token = cookies.get("token");
+  const dispatch = useDispatch();
+
     const stringWithoutQuotes = token && token.replace(/"/g, "");
     console.log(stringWithoutQuotes)
 
+    uploadPhoto && dispatch(addItem({photo: uploadPhoto}))
     const handleUpload = () => {
       setClickedUpload(true)
         if (image) {
           uploadImage(image);
         }
       };
-
+      
     useEffect(() => {
         const fetchMe = async () => {
           try {

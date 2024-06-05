@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import search from "./../Assets/search.png";
 import { Link, useLocation } from "react-router-dom";
 import Cookies from "universal-cookie";
+import { useSelector } from "react-redux";
 
 
 export default function Navbar(props) {
@@ -13,6 +14,11 @@ export default function Navbar(props) {
   const location = useLocation();
   const [bgColor, setBgColor] = useState('rgba(255, 255, 255, 1)');
   const [color, setColor] = useState('rgba(255, 255, 255, 1)');
+
+  const items = useSelector((state) => state);
+  if(items && items.cart[0] && items.cart[0].photo) 
+    cookies.set("setPhoto", items?.cart[0]?.photo)
+  console.log(items?.cart[0]?.photo)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +47,9 @@ export default function Navbar(props) {
           <ul>
             <li style={{color:color}}>Passport</li>
           </ul>
-
-          {photo && cookies.get("token") ? (
+{cookies.get("setPhoto") && cookies.get("token") ? 
+<Link to="/dashboard"><img src={cookies.get("setPhoto")} alt="User photo" className="userPhoto" /></Link> :
+          photo && cookies.get("token") ? (
             <Link to="/dashboard">
               <img src={photo} alt="User photo" className="userPhoto" />
             </Link>

@@ -92,7 +92,7 @@ export default function Chat(props) {
     }
   };
 
-  console.log(messageBack);
+  // console.log(backmessag);
 
   useEffect(() => {
     const fetchMe = async () => {
@@ -147,6 +147,7 @@ export default function Chat(props) {
               message: data.message,
               chatId: data.chatId,
               senderId: data.senderId,
+              name: data.name
             },
           ];
         }
@@ -182,6 +183,7 @@ export default function Chat(props) {
       chatId: currentTourId,
       message: message,
       senderId: me?._id,
+      name: me.name
     });
 
     const postMessage = async () => {

@@ -43,6 +43,7 @@ export default function Account4LogOut(props) {
           cookies.remove("photo");
           cookies.remove("username");
           localStorage.removeItem("userName");
+          // cookies.remove("setPhoto")
           // window.location.reload();
           localStorage.removeItem("notificationShown");
           setShowSignOutToast(true)
