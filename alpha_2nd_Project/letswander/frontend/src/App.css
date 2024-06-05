@@ -2025,6 +2025,8 @@ display: block;
 .chat-names{
   /* border-right: 1px solid rgba(120, 120, 120, 0.2); */
   background-color: rgb(241, 241, 241);
+  /* display: flex;
+  max-width: 100vw; */
   /* padding-top: 0.5rem; */
 }
 
@@ -2240,6 +2242,28 @@ display: block;
   }
 }
 
+@media(max-width:600px){
+.chat{
+  /* flex-direction: column; */
+}
+
+.chat-names{
+  /* border-right: 1px solid rgba(120, 120, 120, 0.2); */
+  /* display: flex; */
+  /* max-width: 100vw; */
+}
+.chat-names-tour{
+  display: none;
+  
+}
+.chat-item-cont{
+  /* width: 5rem!important; */
+}
+.chat-names{
+  width: 5rem;
+
+}
+}
 
 /* --------------------------------------------logoutSection---------------------------------------------- */
 

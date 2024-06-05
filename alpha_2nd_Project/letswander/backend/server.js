@@ -7,7 +7,7 @@ const { Server } = require("socket.io");
 require("dotenv").config()
 const express = require("express");
 const path = require("path");
-
+// 
 
 app.use(cors({
     origin: 'https://letswander-full-new.onrender.com', // Replace with your React app's URL
