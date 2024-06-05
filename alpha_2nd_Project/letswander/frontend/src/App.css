@@ -1,7 +1,7 @@
 body{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* min-width: 28rem; */
-  width: 100vw;
+  /* width: 100vw;   */
 }
 
 .navbar{
@@ -370,7 +370,7 @@ a{
   border-radius: 10px;
   min-width: 15rem;
   background-color: rgb(245, 245, 245);
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 1); */
   color: black;
   min-height: 15rem;
 }
@@ -388,7 +388,7 @@ a{
   align-items: center;
   font-weight: 600;
   line-height: 1rem;
-  font-size: 1vw;
+  font-size: 1.4rem;
   flex-wrap: wrap;
   padding-right: 1rem;
 }
@@ -859,12 +859,9 @@ a{
 
 .mySwiper-sec2{
   width: 60vw;
+  min-width: 20rem;
   margin-top: 3rem;
   position: relative;
-  /* left: -10rem; */
-  /* max-width: 80rem; */
-  /* position: relative;
-  left: -12rem; */
   
 }
 
@@ -880,6 +877,9 @@ a{
 .overview-cont{
   position: relative;
   top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .overview-cont p:nth-child(1){
@@ -891,6 +891,7 @@ a{
 .overview{
   position: relative;
   width: 40vw;
+  min-width: 15rem;
   /* color: gray; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -904,6 +905,7 @@ a{
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem 1.5rem 1rem 1.5rem;
   max-width: 25vw;
+  min-width: 15rem;
   word-wrap: break-word;
 }
 
@@ -934,7 +936,7 @@ a{
 }
 
 .incl-cont{
-  min-width: 20rem;
+  min-width: 15rem;
   width: 30vw;
   background-color: rgb(230, 255, 230);
   padding: 1rem 1.5rem;
@@ -944,7 +946,7 @@ a{
   align-self: flex-start;
 }
 .excl-cont{
-  min-width: 20rem;
+  min-width: 15rem;
   width: 30vw;
   background-color: rgb(255, 231, 231);
   padding: 1rem 1.5rem;
@@ -998,18 +1000,23 @@ a{
 
 .day{
   /* width: 25rem; */
-  background-image: linear-gradient(to bottom right, rgb(106, 200, 255), rgb(0, 64, 255));
+  /* background-image: linear-gradient(to bottom right, rgb(106, 200, 255), rgb(0, 64, 255)); */
+  background-color: orange;
   min-width: 3rem;
   padding: 0.8rem 1.5rem;
   color: white;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-/* .iti-cont p:nth-child(1){
-  width: 20rem;
-
-} */
+@media(max-width: 700px){
+  .iti-cont{
+    flex-direction: column;
+  }
+}
 
 
 /* -------------------------------------------login-------------------------------------------- */
@@ -2112,7 +2119,7 @@ display: block;
 
 .sender-name-orange{
   color: orange;
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -2256,12 +2263,13 @@ display: block;
   display: none;
   
 }
-.chat-item-cont{
-  /* width: 5rem!important; */
-}
+
 .chat-names{
   width: 5rem;
 
+}
+.chat-item-cont, .dash-clicked{
+  width: 2rem!important;
 }
 }
 

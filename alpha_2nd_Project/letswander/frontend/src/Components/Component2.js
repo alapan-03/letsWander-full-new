@@ -231,7 +231,7 @@ export default function Component2(props) {
                               <div className="inner-2-sw-div2">
                                 <p>Starting from</p>
                                 <p>${data.price}</p>
-                                <p>{data.domestic && data.domestic}</p>
+                                {/* <p>{data.domestic && data.domestic}</p> */}
                               </div>
                             </div>
                           </div>

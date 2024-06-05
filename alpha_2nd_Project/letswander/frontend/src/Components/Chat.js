@@ -92,7 +92,7 @@ export default function Chat(props) {
     }
   };
 
-  console.log(postMessages);
+  console.log(messageBack);
 
   useEffect(() => {
     const fetchMe = async () => {
@@ -326,7 +326,7 @@ export default function Chat(props) {
                 >
                   <p>
                     {msg.senderId !== me.id
-                      ? msg?.senderId?.name?.split(" ")[0]
+                      ? <p className="sender-name-orange">{msg?.senderId?.name?.split(" ")[0]}</p>
                       : ""}{" "}
                     {msg?.message}
                   </p>

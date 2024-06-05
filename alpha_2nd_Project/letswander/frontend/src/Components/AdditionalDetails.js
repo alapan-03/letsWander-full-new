@@ -10,24 +10,6 @@ export default function AdditionalDetails(props) {
   const cookies = new Cookies();
 
   let tourId = cookies.get("tourId")
-  // console.log(tourId)
-  
-  // const [isBook, setIsBook] = useState(false)
-
-  // setIsBook(props.isBooked)
-  
-  // useEffect(()=>{
-  //   let details = document.getElementsByClassName("details-cont")[0];
-
-  //   if(props.isBooked){
-  //     details.style.display = "block"
-  //   }
-  //   else{
-  //     details.style.display = "none"
-  //   }
-  // },[])
-
-  // console.log(props.data)
 
   let token = cookies.get("token")
     const stringWithoutQuotes = token.replace(/"/g, "");
@@ -38,15 +20,7 @@ export default function AdditionalDetails(props) {
         totalAdults: 1,
         totalChild: 0,
       });
-    
-      // const handleInputChange = (event) => {
-      //   const { name, value } = event.target;
-      //   setFormData({
-      //     ...formData,
-      //     [name]: name === 'date' ? new Date(value).toISOString().split("T")[0] : parseInt(value, 10),
-      //   });
-      // };
-    
+      
 
       const handleInputChange = (e) => {
         setPostData({

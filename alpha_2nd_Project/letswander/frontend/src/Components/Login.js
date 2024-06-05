@@ -62,13 +62,15 @@ export default function Login(props) {
       // Initialize universal cookie instance
       const cookies = new Cookies();
 
-      // Start Google sign-in process
+      // Start Google sign-in process\
+      // console.log("hey auth")
       const result = await signInWithPopup(auth, new GoogleAuthProvider());
+      console.log(result)
 
       if (result) {
   //       const MAIN_APP_URL = 'http://localhost:5000'; 
   // window.location.href = `${MAIN_APP_URL}`;
-        localStorage.removeItem("hasShownToast");
+        // localStorage.removeItem("hasShownToast");
 
         const user = result.user;
         const token = await user.getIdToken();
@@ -109,6 +111,8 @@ export default function Login(props) {
             setTimeout(() => {
               // window.location.href = "/";
             }, 1500);
+
+            navigate("/")
           } else {
             console.error("Token is undefined");
             setToastError("Login failed!")
@@ -160,9 +164,11 @@ export default function Login(props) {
       console.log(result);
 
       if(result.status === "fail")
-      // toast.error(result.message)
+      return false;
 
-      return result?.status !== "fail";
+      return true;
+
+      // return result?.status !== "fail";
     } catch (err) {
       console.error("Error making POST request:", err.message);
       return false;
