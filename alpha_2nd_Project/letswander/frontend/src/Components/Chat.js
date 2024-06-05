@@ -8,7 +8,7 @@ import { useRef } from "react";
 import { MessageBox } from "react-chat-elements";
 import Navbar from "./Navbar";
 
-const socket = io("http://localhost:3000"); // Create socket connection outside the component
+const socket = io("https://letswander-full-new.onrender.com"); // Create socket connection outside the component
 
 export default function Chat(props) {
   const cookie = new Cookies();

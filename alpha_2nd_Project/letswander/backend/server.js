@@ -7,28 +7,10 @@ const { Server } = require("socket.io");
 require("dotenv").config()
 const express = require("express");
 const path = require("path");
-// const httpProxy = require('http-proxy-middleware');
 
-
-// Configure the proxy middleware
-// const proxy = httpProxy.create({
-//   target: 'https://letsWander.firebaseapp.com', // Replace with your Firebase project name
-//   changeOrigin: true, // Ensure requests appear to originate from your app domain
-//   pathRewrite: { '^/__/auth/': '' }, // Remove the "/__/auth/" prefix from the path
-//   secure: false, // Allow forwarding to HTTPS since Firebase Auth uses it
-// });
-
-// // Apply the proxy middleware to the "/__/auth" route
-// app.use('/__/auth', proxy);
-
-// Cross-Origin-Opener-Policy: restrict-properties
-// app.use((req, res, next) => {
-//     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin-allow-popups');
-//     next();
-// });
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your React app's URL
+    origin: 'https://letswander-full-new.onrender.com', // Replace with your React app's URL
     credentials: true,
 }));
 
@@ -69,7 +51,7 @@ mongoose.connect(process.env.mongo_connect)
 
 const io = new Server(expressServer, {
     cors: {
-        origin: "http://localhost:3000", // Your frontend URL
+        origin: "https://letswander-full-new.onrender.com", // Your frontend URL
         methods: ["GET", "POST"]
     }
 });
