@@ -17,12 +17,6 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CustomToast from "./CustomToast";
 
-// Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyD94aJZKNp1dzOjRyD3cMtLxcHzSyaWE5U",
   authDomain: "letswander-6110c.firebaseapp.com",
@@ -52,10 +46,9 @@ export default function Login(props) {
     email: "",
     password: "",
   });
-  const [showSignOutToastError, setShowSignOutToastError] = useState(false)
-  const [showToastError, setToastError] = useState("")
-  const [showToastSuccess, setToastSuccess] = useState(null)
-
+  const [showSignOutToastError, setShowSignOutToastError] = useState(false);
+  const [showToastError, setToastError] = useState("");
+  const [showToastSuccess, setToastSuccess] = useState(null);
 
   const loginGoogle = async () => {
     try {
@@ -65,13 +58,9 @@ export default function Login(props) {
       // Start Google sign-in process\
       // console.log("hey auth")
       const result = await signInWithPopup(auth, new GoogleAuthProvider());
-      console.log(result)
+      console.log(result);
 
       if (result) {
-  //       const MAIN_APP_URL = 'http://localhost:5000'; 
-  // window.location.href = `${MAIN_APP_URL}`;
-        // localStorage.removeItem("hasShownToast");
-
         const user = result.user;
         const token = await user.getIdToken();
         console.log(token);
@@ -103,20 +92,10 @@ export default function Login(props) {
             // Set token and photo URL in cookies using universal-cookie
             cookies.set("token", token, { path: "/" });
             cookies.set("photo", photoUrl, { path: "/" });
-
-            // Clear notification flag in localStorage
-            // localStorage.removeItem("notificationShown");
-
-            // Redirect after a short delay
-            setTimeout(() => {
-              // window.location.href = "/";
-            }, 1500);
-
-            navigate("/")
+            navigate("/");
           } else {
             console.error("Token is undefined");
-            setToastError("Login failed!")
-            
+            setToastError("Login failed!");
           }
         } else {
           console.error("Login request failed");
@@ -124,21 +103,16 @@ export default function Login(props) {
       }
     } catch (error) {
       console.error("Error signing in with Google:", error);
-      setToastError("Error signing in with Google")
+      setToastError("Error signing in with Google");
     }
   };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      // user && console.log(user.photoURL)
-      // user && setphoto(user?.photoURL)
       if (user) {
         user
           .getIdToken()
-          .then((token) => {
-            // console.log(token);
-            // cookie.set("token", token, { path: "*" });
-          })
+          .then((token) => {})
           .catch((error) => {
             console.error("Error getting ID token:", error);
           });
@@ -146,12 +120,11 @@ export default function Login(props) {
       }
     });
 
-    // Cleanup function to unsubscribe from the listener when the component unmounts
     return () => unsubscribe();
   }, []);
 
   const handleLogInRequest = async (userData) => {
-        try {
+    try {
       const response = await fetch(`${URL}/api/v1/users/loginGoogle`, {
         method: "POST",
         headers: {
@@ -163,8 +136,7 @@ export default function Login(props) {
       const result = await response.json();
       console.log(result);
 
-      if(result.status === "fail")
-      return false;
+      if (result.status === "fail") return false;
 
       return true;
 
@@ -189,7 +161,7 @@ export default function Login(props) {
 
       // Check if the response is not ok and throw an error if it isn't
       if (!response.ok) {
-        setToastError("Problem")
+        setToastError("Problem");
         throw new Error(`Network response was not ok: ${response.statusText}`);
       }
 
@@ -204,28 +176,16 @@ export default function Login(props) {
       setToken(result.token);
       setResult(result);
 
-      // Initialize the universal cookie instance
-      // const cookies = new Cookies();
-
-      // Set the token in cookies
       cookie.set("token", result.token, { path: "/" });
-      // cookie.log(cookie.get("token"));
-
-      // Set the username in cookies
       cookie.set("username", result.name, { path: "/" });
-
-      // Set the username state
       setUsername(result.name);
 
-      // Redirect to the home page
       window.location.href = "/";
     } catch (error) {
       // Log any errors
       console.error("Error making POST request:", error);
     }
   };
-
-
 
   useEffect(() => {
     if (showToastError) {
@@ -263,15 +223,15 @@ export default function Login(props) {
     errors
   );
 
-
-  console.log(showToastError)
+  console.log(showToastError);
   // }
 
   return (
     <>
       <div className="login">
-
-        {showToastError && <CustomToast message={showToastError} isError={true}/>}
+        {showToastError && (
+          <CustomToast message={showToastError} isError={true} />
+        )}
 
         <div className="login-cont">
           <p>PASSPORT</p>

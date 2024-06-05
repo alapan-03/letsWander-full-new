@@ -71,12 +71,12 @@ export default function Signup(props) {
 
         const signUpSuccess = await handleSignUpRequest(googleData);
 
-        localStorage.removeItem("hasShownToastSignUp");
-        
+        // localStorage.removeItem("hasShownToastSignUp");
+
         if (signUpSuccess) {
           //
           setTimeout(() => {
-            navigate("/")
+            navigate("/");
           }, 1000);
         }
       }
@@ -117,30 +117,14 @@ export default function Signup(props) {
       const result = await response.json();
       console.log(result);
 
-  //     if (result.token) {
-  //       const cookies = new Cookies();
-  //       cookies.set("token", result.token, { path: "*" });
-  //       setToken(result.token);
-  //       return true;
-  //     } else {
-  //       console.error("Token is undefined in the response");
-  //       return false;
-  //     }
-  //   } catch (error) {
-  //     console.error("Error making POST request:", error);
-  //     return false;
-  //   }
-  // };
+      if (result.status === "fail") toast.error(result.message);
 
-  if(result.status === "fail")
-    toast.error(result.message)
-
-    return result?.status !== "fail";
-  } catch (err) {
-    console.error("Error making POST request:", err.message);
-    return false;
-  }
-};
+      return result?.status !== "fail";
+    } catch (err) {
+      console.error("Error making POST request:", err.message);
+      return false;
+    }
+  };
 
   const handlePostRequest = async (data) => {
     try {
@@ -201,21 +185,21 @@ export default function Signup(props) {
 
   return (
     <>
-          <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-          transition={Bounce}
-        />
-        {/* Same as */}
-        <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
+      {/* Same as */}
+      <ToastContainer />
       <div className="signup">
         <div className="signup-cont">
           <p className="login-msg">{result?.message}</p>

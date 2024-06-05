@@ -48,8 +48,8 @@ exports.stripe = async (req, res, next) => {
       ]
       // })
       ,
-      success_url: "http://localhost:3000/",
-      cancel_url: "http://localhost:3000/landing"
+      success_url: "https://letswander-full-new.onrender.com",
+      cancel_url: "https://letswander-full-new.onrender.com"
     })
     
     res.json({
@@ -71,14 +71,8 @@ exports.verifyStripe2 = async(req, res, next) => {
 
     if (session && session.payment_status === "paid") {
       let user;
-          // if(req.user.indexOf('@') > -1){
-          // user = await User.findOneAndUpdate({email: req.user}, { $addToSet: { tour: tourId } },
-          //   { new: true });
-          // }
-          // else{
-            user = await User.findOneAndUpdate({_id: req.user}, { $addToSet: { tour: tourId } },
-              { new: true });
-          // }
+          user = await User.findOneAndUpdate({_id: req.user}, { $addToSet: { tour: tourId } },
+            { new: true });
           
           // if(i === 0){
           const tour = await Tour.findById(tourId);
@@ -89,15 +83,6 @@ exports.verifyStripe2 = async(req, res, next) => {
           const guide2 = await User.findOneAndUpdate({ _id: tour.guides[1]}, { $addToSet: { chatJoined: tourId } },
             { new: true } )
           console.log(guide1)
-
-
-          // admin.chatJoined.push(tourId);
-          // guide1.chatJoined.push(tourId);
-          // guide2.chatJoined.push(tourId);
-          // await admin.save({validateBeforeSave: false})
-          // await guide1.save({validateBeforeSave: false})
-          // await guide2.save({validateBeforeSave: false})
-          // }
 
           i = 1;
 
