@@ -66,6 +66,8 @@ export default function Login(props) {
       const result = await signInWithPopup(auth, new GoogleAuthProvider());
 
       if (result) {
+  //       const MAIN_APP_URL = 'http://localhost:5000'; 
+  // window.location.href = `${MAIN_APP_URL}`;
         localStorage.removeItem("hasShownToast");
 
         const user = result.user;

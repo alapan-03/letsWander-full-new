@@ -12,6 +12,7 @@ import URL from "./rootUrl";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import cookies from "universal-cookie";
+import url from "./rootUrl";
 
 export default function Component2(props) {
   const cookie = new cookies();
@@ -44,7 +45,7 @@ export default function Component2(props) {
 
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/v1/tours?name=${props.data}`, {
+        const response = await fetch(`${url}/api/v1/tours?name=${props.data}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${stringWithoutQuotes}`,
@@ -184,7 +185,7 @@ export default function Component2(props) {
                               <div className="inner-2-sw-div2">
                                 <p>Starting from</p>
                                 <p>${data.price}</p>
-                                <p>{data.domestic && data.domestic}</p>
+                                {/* <p>{data.domestic && data.domestic}</p> */}
                               </div>
                             </div>
                           </div>

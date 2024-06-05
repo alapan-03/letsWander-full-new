@@ -192,7 +192,7 @@ exports.login = async (req, res, next) => {
 
             } catch (error) {
                 // Handle Firebase token verification errors
-                console.log(error.message)
+                console.log(error.message +"    authController")
             }
             // console.log(decodedValue)
   
