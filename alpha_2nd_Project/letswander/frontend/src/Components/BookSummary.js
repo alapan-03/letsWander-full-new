@@ -16,7 +16,10 @@ export default function BookSummary(props) {
 
     const cookies = new Cookies();
 
-    
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
+
     const { dataId2 } = useParams();
 
     // cookies.set("tourId", dataId);
@@ -103,15 +106,6 @@ export default function BookSummary(props) {
         // setError(error);
         setLoading(false);
       }
-
-      // let success = document.getElementsByClassName("success")[0];
-
-      // success.style.opacity = 1
-      // success.style.transition = "0.3s"
-      
-      // setTimeout(() => {
-      //   success.style.opacity = 0
-      // }, 4000);
     };
 
     
