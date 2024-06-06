@@ -57,9 +57,9 @@ export default function Login(props) {
       // console.log("hey auth")
 
       const provider = new GoogleAuthProvider();
-    provider.setCustomParameters({
-      prompt: 'select_account'
-    });
+      provider.setCustomParameters({
+        prompt: "select_account",
+      });
 
       const result = await signInWithPopup(auth, provider);
       console.log(result);
@@ -117,7 +117,7 @@ export default function Login(props) {
         user
           .getIdToken()
           .then((token) => {})
-          .catch((error) => { 
+          .catch((error) => {
             console.error("Error getting ID token:", error);
           });
       } else {
@@ -163,9 +163,10 @@ export default function Login(props) {
         body: JSON.stringify(data),
       });
 
+      // console.log(result)
       // Check if the response is not ok and throw an error if it isn't
       if (!response.ok) {
-        setToastError("Problem");
+        setToastError("No user found, try signing up!");
         throw new Error(`Network response was not ok: ${response.statusText}`);
       }
 

@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 export default function Component4(props) {
   const [uniqueThemes, setUniqueThemes] = useState(new Set());
 
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -24,7 +23,6 @@ export default function Component4(props) {
       window.removeEventListener("resize", updateWindowWidth);
     };
   }, []);
-
 
   useEffect(() => {
     // Extract unique themes from apiData
@@ -42,7 +40,15 @@ export default function Component4(props) {
         {/* <div className="bestSeller"> */}
 
         <Swiper
-          slidesPerView={windowWidth > 1300 ? 4 : windowWidth > 1050 ? 3 : windowWidth > 650 ? 2 : 1}
+          slidesPerView={
+            windowWidth > 1300
+              ? 4
+              : windowWidth > 1050
+              ? 3
+              : windowWidth > 650
+              ? 2
+              : 1
+          }
           autoplay={{
             delay: 5500,
             disableOnInteraction: false,
@@ -52,26 +58,28 @@ export default function Component4(props) {
           modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
-
-{[...uniqueThemes].map((theme) => (
-        <SwiperSlide key={theme}>
-          <div>
-            <p className="themes">{theme}</p><br/>
-            {props.apiData
-              .filter((data) => data.theme === theme)
-              .slice(0, 1)
-              .map((data) => (
-                <Link key={data._id} to={`${data._id}`}> 
-                  <div key={data._id}>
-                    <img src={data.image} alt={theme} />
-                    <br />
-                    <p>{/* Add additional details or description if needed */}</p>
-                  </div>
-                </Link>
-              ))}
-          </div>
-        </SwiperSlide>
-      ))}
+          {[...uniqueThemes].map((theme) => (
+            <SwiperSlide key={theme}>
+              <div>
+                <p className="themes">{theme}</p>
+                <br />
+                {props.apiData
+                  .filter((data) => data.theme === theme)
+                  .slice(0, 1)
+                  .map((data) => (
+                    <Link key={data._id} to={`${data._id}`}>
+                      <div key={data._id}>
+                        <img src={data.image} alt={theme} />
+                        <br />
+                        <p>
+                          {/* Add additional details or description if needed */}
+                        </p>
+                      </div>
+                    </Link>
+                  ))}
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

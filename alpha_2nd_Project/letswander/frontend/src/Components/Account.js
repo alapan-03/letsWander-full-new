@@ -13,28 +13,25 @@ export default function Account(props) {
     setMenuSt(e);
   }
 
-  function handleUpdate(){
-    setUpdated(true)
+  function handleUpdate() {
+    setUpdated(true);
   }
 
-
   useEffect(() => {
-    const hasShownToastUpdate = localStorage.getItem('hasShownToastUpdate');
+    const hasShownToastUpdate = localStorage.getItem("hasShownToastUpdate");
 
     if (updated && !hasShownToastUpdate) {
       const timeout = setTimeout(() => {
         // toast.success('Successfully updated');
-        localStorage.setItem('hasShownToastUpdate', 'true');
+        localStorage.setItem("hasShownToastUpdate", "true");
       }, 1000);
 
       return () => clearTimeout(timeout);
     }
   }, [updated]);
 
-
   return (
     <>
-
       <Navbar />
       <div className="dashboard-parent">
         <Account1 menuItem={setMenu} />
@@ -43,9 +40,11 @@ export default function Account(props) {
         ) : menu === "bookings" ? (
           <Account3Bookings />
         ) : (
-          <p><Account4LogOut/></p>
+          <p>
+            <Account4LogOut />
+          </p>
         )}
-      {/* <Account4LogOut/> */}
+        {/* <Account4LogOut/> */}
       </div>
     </>
   );

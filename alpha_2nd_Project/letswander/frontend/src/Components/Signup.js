@@ -12,6 +12,7 @@ import {
   signInWithPopup,
   onAuthStateChanged,
 } from "firebase/auth";
+import CustomToast from "./CustomToast";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -34,6 +35,8 @@ export default function Signup(props) {
   const [result, setResult] = useState(null);
   const [token, setToken] = useState(null);
   const [googleData, setGoogleData] = useState();
+  const [showToastError, setToastError] = useState("");
+  const [showToastSuccess, setToastSuccess] = useState(null);
 
   const loginGoogle = async () => {
     try {
@@ -41,7 +44,7 @@ export default function Signup(props) {
 
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({
-        prompt: 'select_account'
+        prompt: "select_account",
       });
 
       const result = await signInWithPopup(auth, provider);
@@ -68,13 +71,14 @@ export default function Signup(props) {
         console.log("Sign-in result:", result);
         console.log("Token:", token);
 
-        cookies.set("token", token, { path: "*" });
-        cookies.set("photo", photoUrl, { path: "*" });
-        localStorage.setItem("token", token);
-        localStorage.removeItem("notificationShown");
+        // cookies.set("token", token, { path: "*" });
+        // cookies.set("photo", photoUrl, { path: "*" });
+        // localStorage.setItem("token", token);
+        // localStorage.removeItem("notificationShown");
 
         const signUpSuccess = await handleSignUpRequest(googleData);
 
+        console.log(signUpSuccess);
         // localStorage.removeItem("hasShownToastSignUp");
 
         if (signUpSuccess) {
@@ -96,7 +100,7 @@ export default function Signup(props) {
           .getIdToken()
           .then((token) => {
             console.log(token);
-            cookie.set("token", token, { path: "*" });
+            // cookie.set("token", token, { path: "*" });
           })
           .catch((error) => {
             console.error("Error getting ID token:", error);
@@ -118,12 +122,18 @@ export default function Signup(props) {
         body: JSON.stringify(googleData),
       });
 
+      if (!response.ok) {
+        setToastError("Already signed up, try signing in!");
+        // throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+
       const result = await response.json();
       console.log(result);
 
-      if (result.status === "fail") 
+      if (result.status === "fail") return false;
 
-      return result?.status !== "fail";
+      setToastSuccess("Signup successful!");
+      return true;
     } catch (err) {
       console.error("Error making POST request:", err.message);
       return false;
@@ -142,20 +152,31 @@ export default function Signup(props) {
       });
 
       // Handle the response data
+
+      if (!response.ok) {
+        setToastError("Already signed up, try signing in!");
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      } else {
+        setToastSuccess("Signup successful, now try logging in!");
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
+      }
+
       const result = await response.json();
       console.log(result);
       // setToken(result.token)
       if (token) {
         localStorage.removeItem("hasShownToastSignUp");
 
-        setTimeout(() => {
-          // navigate('/login')
-        }, 1000);
+        // setTimeout(() => {
+        navigate("/login");
+        // }, 1000);
       }
 
       const cookies = new Cookies();
-      cookies.set("token", result.token, { path: "*" });
-      setToken(cookies.get("token"));
+      // cookies.set("token", result.token, { path: "*" });
+      // setToken(cookies.get("token"));
     } catch (error) {
       console.error("Error making POST request:", error);
     }
@@ -190,6 +211,12 @@ export default function Signup(props) {
   return (
     <>
       <div className="signup">
+        {showToastError && (
+          <CustomToast message={showToastError} isError={true} />
+        )}
+        {showToastSuccess && (
+          <CustomToast message={showToastSuccess} isError={false} />
+        )}
         <div className="signup-cont">
           <p className="login-msg">{result?.message}</p>
 

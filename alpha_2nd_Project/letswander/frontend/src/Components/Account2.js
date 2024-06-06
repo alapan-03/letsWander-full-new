@@ -214,7 +214,7 @@ export default function Account2(props) {
                 <div>
                   <p>Name</p>
                   <input name="name"
-                    value={me.name}
+                    value={me?.name}
                     onChange={handleInputChange}/>
                 </div>
                 {/* <div>
@@ -228,7 +228,7 @@ export default function Account2(props) {
               <div>
                 <p>Email address</p>
                 <input disabled={true} className="dash2-email-inp" name="email"
-                  value={me.email}
+                  value={me?.email}
                   onChange={handleInputChange}/>
               </div>
             </div>
