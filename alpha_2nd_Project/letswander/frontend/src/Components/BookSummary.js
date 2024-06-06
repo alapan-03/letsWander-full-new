@@ -142,17 +142,17 @@ export default function BookSummary(props) {
                           
                           <div>
                             <img className='summary-icons' src={clock}></img>
-                            <p>Duration: {data?.doc?.tour.duration}</p>
+                            <p>{data?.doc?.tour.duration} days</p>
                           </div>
 
                           <div>
                             <img className='summary-icons' src={people}/>
-                            <p>No. of Person(s): {data?.doc?.totalAdults+data?.doc?.totalChild}</p>
+                            <p>{data?.doc?.totalAdults+data?.doc?.totalChild} persons</p>
                           </div>
 
                           <div>
                             <img className='summary-icons' src={calender}/>
-                            <p>Start Date: {formattedDate}</p>
+                            <p>{formattedDate}</p>
                           </div>
                         </div>
                     </div>
