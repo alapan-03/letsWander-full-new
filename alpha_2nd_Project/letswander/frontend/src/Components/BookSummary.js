@@ -16,10 +16,6 @@ export default function BookSummary(props) {
 
     const cookies = new Cookies();
 
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
-
     const { dataId2 } = useParams();
 
     // cookies.set("tourId", dataId);
