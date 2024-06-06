@@ -1030,6 +1030,7 @@ a{
   align-items: center;
   height: 100vh;
   background-color: rgb(255, 243, 221);
+  min-width: 22rem;
 }
 
 .login-msg{
@@ -1053,7 +1054,7 @@ a{
   background-color: rgba(255, 255, 255, 0.762);
   justify-content: center;
   width: 30vw;
-  min-width: 20rem;
+  min-width: 19rem;
   border-radius: 10px;
   align-items: center;
   gap: 1rem;
@@ -1068,7 +1069,7 @@ a{
   border: none;
   font-size: 1.1rem;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-
+  width: 100%;
 }
 
 .login-cont input:focus{
@@ -1143,7 +1144,7 @@ a{
 
 .input-container input {
   width: 100%;
-  padding-right: 2rem; /* Add some padding to avoid overlapping text */
+  /* padding-right: 2rem; Add some padding to avoid overlapping text */
   padding-bottom: 1.1rem;
 }
 
@@ -1178,6 +1179,9 @@ a{
   align-items: center;
   height: 100vh;
   background-color: rgb(255, 243, 221);
+  min-width: 25rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 .signup-msg{
@@ -1201,7 +1205,7 @@ a{
   background-color: rgba(255, 255, 255, 0.762);
   justify-content: center;
   width: 30vw;
-  min-width: 25rem;
+  min-width: 20rem;
   border-radius: 10px;
   align-items: center;
   gap: 1rem;

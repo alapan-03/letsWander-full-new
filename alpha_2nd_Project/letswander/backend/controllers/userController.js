@@ -207,12 +207,12 @@ exports.updateUser = async (req, res) => {
         // console.log(req.user._id)
     
         let user;
-          if(req.user.indexOf('@') > -1){
-          user = await User.findOneAndUpdate({email: req.user}, req.body);
-          }
-          else{
+        //   if(req.user.indexOf('@') > -1){
+        //   user = await User.findOneAndUpdate({email: req.user}, req.body);
+        //   }
+        //   else{
             user = await User.findOneAndUpdate({_id: req.user}, req.body);
-          }
+        //   }
     
         res.status(200).json({
             status: "success",

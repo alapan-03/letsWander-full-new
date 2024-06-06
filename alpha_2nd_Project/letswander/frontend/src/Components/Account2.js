@@ -212,7 +212,7 @@ export default function Account2(props) {
             <div className="dash2-inputs">
               <div className="dash2-name">
                 <div>
-                  <p>First Name</p>
+                  <p>Name</p>
                   <input name="name"
                     value={me.name}
                     onChange={handleInputChange}/>

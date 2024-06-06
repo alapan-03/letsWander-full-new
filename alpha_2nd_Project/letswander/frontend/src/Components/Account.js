@@ -3,8 +3,6 @@ import Navbar from "./Navbar";
 import Account2 from "./Account2";
 import Account3Bookings from "./Account3Bookings";
 import { useState, useEffect } from "react";
-import { ToastContainer, toast, Bounce } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Account4LogOut from "./Account4LogOut";
 
 export default function Account(props) {
@@ -25,7 +23,7 @@ export default function Account(props) {
 
     if (updated && !hasShownToastUpdate) {
       const timeout = setTimeout(() => {
-        toast.success('Successfully updated');
+        // toast.success('Successfully updated');
         localStorage.setItem('hasShownToastUpdate', 'true');
       }, 1000);
 
@@ -33,39 +31,9 @@ export default function Account(props) {
     }
   }, [updated]);
 
-  // useEffect(() => {
-  //   const hasShownToastUpdateError = localStorage.getItem('hasShownToastUpdateError');
-
-  //   if (updated && !hasShownToastUpdateError) {
-  //     const timeout = setTimeout(() => {
-  //       toast.error('Update error!');
-  //       localStorage.setItem('hasShownToastUpdateError', 'true');
-  //     }, 1000);
-
-  //     return () => clearTimeout(timeout);
-  //   }
-  // }, [updated]);
-
-  
 
   return (
     <>
-
-<ToastContainer
-position="top-right"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-transition= {Bounce}
-/>
-{/* Same as */}
-<ToastContainer />
 
       <Navbar />
       <div className="dashboard-parent">

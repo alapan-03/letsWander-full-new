@@ -6,8 +6,6 @@ import URL from "./rootUrl";
 import { useFormik } from "formik";
 import { signUpSchema } from "./Schema/index";
 import { initializeApp } from "firebase/app";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import {
   getAuth,
   GoogleAuthProvider,
@@ -123,7 +121,7 @@ export default function Signup(props) {
       const result = await response.json();
       console.log(result);
 
-      if (result.status === "fail") toast.error(result.message);
+      if (result.status === "fail") 
 
       return result?.status !== "fail";
     } catch (err) {
@@ -191,21 +189,6 @@ export default function Signup(props) {
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition={Bounce}
-      />
-      {/* Same as */}
-      <ToastContainer />
       <div className="signup">
         <div className="signup-cont">
           <p className="login-msg">{result?.message}</p>

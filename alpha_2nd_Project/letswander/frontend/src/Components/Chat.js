@@ -327,7 +327,7 @@ export default function Chat(props) {
                   className={msg.senderId !== me.id ? "leftChat" : "rightChat"}
                 >
                   <p>
-                    {msg.senderId !== me.id
+                    {msg.senderId._id !== me.id
                       ? <p className="sender-name-orange">{msg?.senderId?.name?.split(" ")[0]}</p>
                       : ""}{" "}
                     {msg?.message}

@@ -13,8 +13,6 @@ import {
 import { Formik } from "formik";
 import { useFormik } from "formik";
 import { signUpSchema } from "./Schema/loginSchema";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import CustomToast from "./CustomToast";
 
 const firebaseConfig = {
@@ -113,21 +111,21 @@ export default function Login(props) {
     }
   };
 
-  // useEffect(() => {
-  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
-  //     if (user) {
-  //       user
-  //         .getIdToken()
-  //         .then((token) => {})
-  //         .catch((error) => { 
-  //           console.error("Error getting ID token:", error);
-  //         });
-  //     } else {
-  //     }
-  //   });
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        user
+          .getIdToken()
+          .then((token) => {})
+          .catch((error) => { 
+            console.error("Error getting ID token:", error);
+          });
+      } else {
+      }
+    });
 
-  //   return () => unsubscribe();
-  // }, []);
+    return () => unsubscribe();
+  }, []);
 
   const handleLogInRequest = async (userData) => {
     try {
