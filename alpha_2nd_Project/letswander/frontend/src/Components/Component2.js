@@ -13,10 +13,12 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import cookies from "universal-cookie";
 import url from "./rootUrl";
+import CustomToast from "./CustomToast";
 
 export default function Component2(props) {
   const cookie = new cookies();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showCustomToast2, setShowCustomToast2] = useState(false)
 
   useEffect(() => {
     const updateWindowWidth = () => {
@@ -119,32 +121,49 @@ export default function Component2(props) {
     const notificationShown = localStorage.getItem("notificationShown");
 
     if (token && !notificationShown) {
-      toast("Successfully logged in");
+      // toast("Successfully logged in");
       localStorage.setItem("notificationShown", "true");
     } else if (!token && !notificationShown) {
-      toast("Successfully logged out!");
+      // toast("Successfully logged out!");
       localStorage.setItem("notificationShown", "true");
     }
   }, [token]);
   // }
 
+
+  
+  useEffect(() => {
+    const handleSessionIdChange = () => {
+      const currentSessionId = cookie.get("sessionId");
+      const previousSessionId = localStorage.getItem("previousSessionId");
+
+      if (currentSessionId && currentSessionId !== previousSessionId) {
+        setShowCustomToast2(true);
+        localStorage.setItem("previousSessionId", currentSessionId);
+
+        // Hide the toast after 5 seconds
+        setTimeout(() => {
+          setShowCustomToast2(false);
+        }, 5000);
+      }
+    };
+
+    handleSessionIdChange(); // Check on initial load
+    window.addEventListener("storage", handleSessionIdChange);
+
+    return () => {
+      window.removeEventListener("storage", handleSessionIdChange);
+    };
+  }, []);
+
+
   return (
     <>
       <div>
         {/* <button onClick={notify}>Notify</button> */}
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-          transition={Bounce} // Corrected property
-        />
+        {showCustomToast2 && (
+        <CustomToast message="Payment successful" isError={false}/>
+      )}
       </div>
 
       <div className="s3-grid">

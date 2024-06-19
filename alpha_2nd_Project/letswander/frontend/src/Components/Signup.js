@@ -71,9 +71,9 @@ export default function Signup(props) {
         console.log("Sign-in result:", result);
         console.log("Token:", token);
 
-        // cookies.set("token", token, { path: "*" });
-        // cookies.set("photo", photoUrl, { path: "*" });
-        // localStorage.setItem("token", token);
+        cookies.set("token", token, { path: "*" });
+        cookies.set("photo", photoUrl, { path: "*" });
+        localStorage.setItem("token", token);
         // localStorage.removeItem("notificationShown");
 
         const signUpSuccess = await handleSignUpRequest(googleData);
@@ -170,13 +170,16 @@ export default function Signup(props) {
         localStorage.removeItem("hasShownToastSignUp");
 
         // setTimeout(() => {
-        navigate("/login");
+        // navigate("/");
         // }, 1000);
       }
 
       const cookies = new Cookies();
-      // cookies.set("token", result.token, { path: "*" });
+      cookies.set("token", result.token, { path: "*" });
       // setToken(cookies.get("token"));
+      setTimeout(() => {
+        navigate("/")
+      }, 1000);
     } catch (error) {
       console.error("Error making POST request:", error);
     }

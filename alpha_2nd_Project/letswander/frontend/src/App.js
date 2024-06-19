@@ -74,29 +74,29 @@ function App() {
   }, [stringWithoutQuotes]);
 
 
-  useEffect(() => {
-    const handleSessionIdChange = () => {
-      const currentSessionId = cookie.get("sessionId");
-      const previousSessionId = localStorage.getItem("previousSessionId");
+  // useEffect(() => {
+  //   const handleSessionIdChange = () => {
+  //     const currentSessionId = cookie.get("sessionId");
+  //     const previousSessionId = localStorage.getItem("previousSessionId");
 
-      if (currentSessionId && currentSessionId !== previousSessionId) {
-        setShowCustomToast2(true);
-        localStorage.setItem("previousSessionId", currentSessionId);
+  //     if (currentSessionId && currentSessionId !== previousSessionId) {
+  //       setShowCustomToast2(true);
+  //       localStorage.setItem("previousSessionId", currentSessionId);
 
-        // Hide the toast after 5 seconds
-        setTimeout(() => {
-          setShowCustomToast2(false);
-        }, 5000);
-      }
-    };
+  //       // Hide the toast after 5 seconds
+  //       setTimeout(() => {
+  //         setShowCustomToast2(false);
+  //       }, 5000);
+  //     }
+  //   };
 
-    handleSessionIdChange(); // Check on initial load
-    window.addEventListener("storage", handleSessionIdChange);
+  //   handleSessionIdChange(); // Check on initial load
+  //   window.addEventListener("storage", handleSessionIdChange);
 
-    return () => {
-      window.removeEventListener("storage", handleSessionIdChange);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("storage", handleSessionIdChange);
+  //   };
+  // }, []);
   
 
 
@@ -151,9 +151,9 @@ function App() {
 
 
     {showCustomToast &&<CustomToast message="Login successful!" isError={false}/>}
-    {showCustomToast2 && (
+    {/* {showCustomToast2 && (
         <CustomToast message="Payment successful" isError={false}/>
-      )}
+      )} */}
 
     {me && me?.role === "admin" || me?.role === "guide" ? 
       <Chat/>
