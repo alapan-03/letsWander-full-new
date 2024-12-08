@@ -26,7 +26,7 @@ import CustomToast from './Components/CustomToast';
 
 export const UserContext = createContext()
 
-const socket = io('http://localhost:3000');
+const socket = io('https://letswander-full-new.onrender.com');
 
 
 
