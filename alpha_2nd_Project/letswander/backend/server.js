@@ -29,6 +29,7 @@ const path = require("path");
 app.use(
   cors({
     origin: "https://letswander-full-new.onrender.com", // Replace with your React app's URL
+    // origin: "http://localhost:3000", // Replace with your React app's URL
     credentials: true,
   })
 );
@@ -66,7 +67,8 @@ const expressServer = app.listen(
 
 const io = new Server(expressServer, {
   cors: {
-    origin: "https://letswander-full-new.onrender.com", // Your frontend URL
+    // origin: "https://letswander-full-new.onrender.com", // Your frontend URL
+    origin: "http://localhost:3000/", // Your frontend URL
     methods: ["GET", "POST"],
   },
 });

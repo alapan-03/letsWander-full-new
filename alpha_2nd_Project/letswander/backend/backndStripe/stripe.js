@@ -49,6 +49,8 @@ exports.stripe = async (req, res, next) => {
       // })
       ,
       success_url: "https://letswander-full-new.onrender.com",
+      // success_url: "https://localhost:3000",
+
       cancel_url: "https://letswander-full-new.onrender.com"
     })
     

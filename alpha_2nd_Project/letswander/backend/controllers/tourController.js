@@ -15,7 +15,9 @@ exports.getAllTours = async (req, res) => {
         if(req.query.name ){
             let data = await Tour.find({name:req.query.name});
 
-            await client.set("data", JSON.stringify(data), { EX: 3600 });
+            // await client.set("data", JSON.stringify(data), { EX: 3600 });
+
+            console.log(data)
 
             res.status(200).json({
                 data
@@ -24,7 +26,7 @@ exports.getAllTours = async (req, res) => {
         else{
             let data = await Tour.find();
 
-            await client.set("data", JSON.stringify(data), { EX: 3600 });
+            // await client.set("data", JSON.stringify(data), { EX: 3600 });
             res.status(200).json({
                 data
             })
@@ -35,29 +37,29 @@ exports.getAllTours = async (req, res) => {
     }
 }
 
-exports.cachedTours = async(req, res, next) => {
-    try{
-        const data = await client.get("data");
-        // console.log(data)
+// exports.cachedTours = async(req, res, next) => {
+//     try{
+//         const data = await client.get("data");
+//         // console.log(data)
 
-        if (data) {
-            // If data exists in cache, return it
-            return res.status(200).json({
-                status: "success",
-                data: JSON.parse(data)
-            });
-        }
+//         if (data) {
+//             // If data exists in cache, return it
+//             return res.status(200).json({
+//                 status: "success",
+//                 data: JSON.parse(data)
+//             });
+//         }
 
-        // If no data in cache, proceed to the next middleware/controller
-        next();
-    }
-    catch(err){
-        res.status(500).json({
-            status: "fail",
-            message: err.message+"nnn"
-        })
-    }
-}
+//         // If no data in cache, proceed to the next middleware/controller
+//         next();
+//     }
+//     catch(err){
+//         res.status(500).json({
+//             status: "fail",
+//             message: err.message+"nnn"
+//         })
+//     }
+// }
 
 
 exports.getById = async (req, res) => {

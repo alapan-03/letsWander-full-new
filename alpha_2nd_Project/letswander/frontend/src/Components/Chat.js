@@ -9,6 +9,7 @@ import { MessageBox } from "react-chat-elements";
 import Navbar from "./Navbar";
 
 const socket = io("https://letswander-full-new.onrender.com"); // Create socket connection outside the component
+// const socket = io("http://localhost:3000/"); // Create socket connection outside the component
 
 export default function Chat(props) {
   const cookie = new Cookies();
@@ -39,7 +40,7 @@ export default function Chat(props) {
     const fetchMe = async () => {
       try {
         const response = await fetch(
-          `${url}/api/v1/chat/createChat/${items?.cart[0].id}`,
+          `${url}/api/v1/chat/createChat/${items?.cart[0]?.id}`,
           {
             method: "POST",
             headers: {
@@ -129,7 +130,7 @@ export default function Chat(props) {
 
   useEffect(() => {
     socket.on("connect", () => {
-      console.log("Socket.io connected with ID:", socket.id);
+      console.log("Socket.io connected with ID:", socket?.id);
 
       socket.emit("setup", me);
     });
@@ -234,7 +235,7 @@ export default function Chat(props) {
   };
 
   const uniqueChats = me?.chatJoined?.reduce((acc, current) => {
-    const x = acc.find((item) => item.id === current.id);
+    const x = acc.find((item) => item?.id === current?.id);
     if (!x) {
       return acc.concat([current]);
     } else {
@@ -273,12 +274,12 @@ export default function Chat(props) {
                 className={`chat-item-cont ${
                   clicked === el?.name ? "dash-clicked" : ""
                 }`}
-                key={el.id}
+                key={el?.id}
                 onClick={() => {
                   setCurrentTourId(el?.id);
                   fetchMessages(el?.id);
                   setClicked(el?.name);
-                  fetchTour(el.id);
+                  fetchTour(el?.id);
                 }}
               >
                 <img className="chat-img" src={el?.image} alt="Chat" />
@@ -305,12 +306,12 @@ export default function Chat(props) {
                 <div
                   key={index}
                   className={`${
-                    el?.senderId._id === me?.id ? "rightChat" : "leftChat"
+                    el?.senderId?._id === me?.id ? "rightChat" : "leftChat"
                   }`}
                 >
                   <p>
                     <p className="sender-name-orange">
-                      {el?.senderId._id === me?.id
+                      {el?.senderId?._id === me?.id
                         ? ""
                         : el?.senderId?.name?.split(" ")[0] + ": "}
                     </p>
@@ -324,10 +325,10 @@ export default function Chat(props) {
               .map((msg, index) => (
                 <div
                   key={index}
-                  className={msg.senderId !== me.id ? "leftChat" : "rightChat"}
+                  className={msg.senderId !== me?.id ? "leftChat" : "rightChat"}
                 >
                   <p>
-                    {msg.senderId._id !== me.id
+                    {msg.senderId._id !== me?.id
                       ? <p className="sender-name-orange">{msg?.senderId?.name?.split(" ")[0]}</p>
                       : ""}{" "}
                     {msg?.message}

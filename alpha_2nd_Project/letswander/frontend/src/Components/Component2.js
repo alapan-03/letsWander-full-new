@@ -60,7 +60,7 @@ export default function Component2(props) {
           props.apiData(result.data);
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error.message);
       }
     };
     fetchData();
